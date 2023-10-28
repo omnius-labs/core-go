@@ -1,1 +1,1 @@
-# Omnius Core Go
+# Omnius Core for Go
