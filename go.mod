@@ -1,4 +1,4 @@
-module github.com/omnius-labs/core-rs
+module github.com/omnius-labs/core-go
 
 go 1.21.3
 
