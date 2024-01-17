@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/omnius-labs/core-go/migration"
+	"github.com/omnius-labs/core-go/pkg/migration"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
