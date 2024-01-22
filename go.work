@@ -1,0 +1,7 @@
+go 1.21.6
+
+use (
+	./pkg/base
+	./pkg/cloud_aws
+	./pkg/migration
+)

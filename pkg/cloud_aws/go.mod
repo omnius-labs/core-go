@@ -1,6 +1,6 @@
 module github.com/omnius-labs/core-go/pkg/cloud-aws
 
-go 1.21.3
+go 1.21.6
 
 require (
 	github.com/aws/aws-sdk-go v1.49.19
