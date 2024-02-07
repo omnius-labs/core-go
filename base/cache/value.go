@@ -3,7 +3,7 @@ package cache
 import (
 	"sync"
 
-	"github.com/omnius-labs/core-go/pkg/base/clock"
+	"github.com/omnius-labs/core-go/base/clock"
 	"golang.org/x/sync/semaphore"
 )
 

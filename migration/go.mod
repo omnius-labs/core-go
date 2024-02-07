@@ -1,4 +1,4 @@
-module github.com/omnius-labs/core-go/pkg/migration
+module github.com/omnius-labs/core-go/migration
 
 go 1.21.6
 

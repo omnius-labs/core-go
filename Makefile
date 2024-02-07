@@ -1,7 +1,14 @@
+modules = \
+	aws \
+	base \
+	migration
+
 install:
-	make -C ./pkg/migration install
+	for dir in $(modules); do \
+        make -C ./$$dir install; \
+    done
 
 test:
-	make -C ./pkg/base test
-	make -C ./pkg/cloud_aws test
-	make -C ./pkg/migration test
+	for dir in $(modules); do \
+        make -C ./$$dir test; \
+    done
