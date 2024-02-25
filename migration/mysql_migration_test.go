@@ -30,7 +30,7 @@ var _ = Describe("Migration Test", func() {
 			Env: map[string]string{
 				"MYSQL_ROOT_PASSWORD": "password",
 			},
-			WaitingFor: wait.ForListeningPort("3306/tcp"),
+			WaitingFor: wait.ForAll(wait.ForListeningPort("3306/tcp"), wait.ForLog("mysqld: ready for connections").WithOccurrence(2)),
 		}
 		var err error
 		mysqlC, err = testcontainers.GenericContainer(ctx, testcontainers.GenericContainerRequest{
