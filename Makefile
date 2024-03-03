@@ -1,7 +1,8 @@
 modules = \
 	aws \
 	base \
-	migration
+	migration \
+	testing
 
 install:
 	for dir in $(modules); do \
