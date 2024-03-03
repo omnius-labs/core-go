@@ -1,11 +1,10 @@
-package migration_test
+package migration
 
 import (
 	"context"
 	"fmt"
 	"testing"
 
-	"github.com/omnius-labs/core-go/migration"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
