@@ -56,7 +56,7 @@ var _ = Describe("Migration Test", func() {
 		path := "./case/simple_create_table"
 		username := "your_username"
 		description := "your_description"
-		migrator, err := migration.NewMySQLMigrator(url, path, username, description)
+		migrator, err := NewMySQLMigrator(url, path, username, description)
 		Expect(err).NotTo(HaveOccurred())
 
 		err = migrator.Migrate()
@@ -67,7 +67,7 @@ var _ = Describe("Migration Test", func() {
 		path := "./case/create_table_syntax_error_test"
 		username := "your_username"
 		description := "your_description"
-		migrator, err := migration.NewMySQLMigrator(url, path, username, description)
+		migrator, err := NewMySQLMigrator(url, path, username, description)
 		Expect(err).NotTo(HaveOccurred())
 
 		err = migrator.Migrate()
@@ -79,7 +79,7 @@ var _ = Describe("Migration Test", func() {
 			path := "./case/simple_create_table"
 			username := "your_username"
 			description := "your_description"
-			migrator, err := migration.NewMySQLMigrator(url, path, username, description)
+			migrator, err := NewMySQLMigrator(url, path, username, description)
 			Expect(err).NotTo(HaveOccurred())
 
 			err = migrator.Migrate()
@@ -90,7 +90,7 @@ var _ = Describe("Migration Test", func() {
 			path := "./case/simple_create_table"
 			username := "your_username"
 			description := "your_description"
-			migrator, err := migration.NewMySQLMigrator(url, path, username, description)
+			migrator, err := NewMySQLMigrator(url, path, username, description)
 			Expect(err).NotTo(HaveOccurred())
 
 			err = migrator.Migrate()
