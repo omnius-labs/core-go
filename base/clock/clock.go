@@ -6,15 +6,15 @@ type Clock interface {
 	Now() time.Time
 }
 
-var _ Clock = (*ClockImpl)(nil)
+var _ Clock = (*clockImpl)(nil)
 
-type ClockImpl struct{}
+type clockImpl struct{}
 
 func New() Clock {
-	return &ClockImpl{}
+	return &clockImpl{}
 }
 
-func (c *ClockImpl) Now() time.Time {
+func (c *clockImpl) Now() time.Time {
 	return time.Now()
 }
 

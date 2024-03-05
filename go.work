@@ -4,4 +4,5 @@ use (
 	./aws
 	./base
 	./migration
+	./testing
 )
