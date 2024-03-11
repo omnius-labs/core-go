@@ -4,4 +4,6 @@ use (
 	./aws
 	./base
 	./migration
+	./parserc
+	./testing
 )
