@@ -1,4 +1,4 @@
-module github.com/omnius-labs/core-go/migration/testing
+module github.com/omnius-labs/core-go/testing
 
 go 1.22.0
 

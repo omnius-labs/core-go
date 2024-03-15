@@ -1,6 +1,3 @@
-//go:build !ci
-// +build !ci
-
 package secrets_test
 
 import (
@@ -18,6 +15,7 @@ func TestSecretsReader(t *testing.T) {
 
 var _ = Describe("SecretsReader Test", func() {
 	It("simple test", func() {
+		Skip("This is a skipped test")
 		fmt.Println("This is a log message")
 	})
 })

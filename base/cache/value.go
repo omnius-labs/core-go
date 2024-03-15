@@ -2,6 +2,7 @@ package cache
 
 import (
 	"sync"
+	"time"
 
 	"github.com/omnius-labs/core-go/base/clock"
 	"golang.org/x/sync/semaphore"
@@ -19,15 +20,15 @@ type ValueCache[T any] struct {
 	onRefresh      func() // for test
 }
 
-func NewValueCache[T any](clock clock.Clock, timeoutRefresh int64, timeoutRotten int64) *ValueCache[T] {
+func NewValueCache[T any](clock clock.Clock, timeoutRefresh time.Duration, timeoutRotten time.Duration) *ValueCache[T] {
 	return &ValueCache[T]{
 		clock:          clock,
 		expireRefresh:  0,
 		expireRotten:   0,
 		mutex:          sync.Mutex{},
 		semaphore:      semaphore.NewWeighted(1),
-		timeoutRefresh: timeoutRefresh,
-		timeoutRotten:  timeoutRotten,
+		timeoutRefresh: int64(timeoutRefresh.Seconds()),
+		timeoutRotten:  int64(timeoutRotten.Seconds()),
 	}
 }
 

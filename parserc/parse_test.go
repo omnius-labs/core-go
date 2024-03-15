@@ -7,7 +7,7 @@ import (
 	. "github.com/onsi/gomega"
 
 	parser "github.com/omnius-labs/core-go/parserc"
-	"github.com/omnius-labs/core-go/parserc/internal"
+	ctesting "github.com/omnius-labs/core-go/testing"
 )
 
 func TestParse(t *testing.T) {
@@ -55,8 +55,8 @@ var _ = Describe("Parse Test", func() {
 			It(tt.name, func() {
 				got := tt.parser(tt.input)
 				Expect(got.Succeeded).To(Equal(tt.wantSucceeded))
-				Expect(got.Value).To(internal.EqualCmp(tt.wantValue))
-				Expect(got.Remainder.String()).To(internal.EqualCmp(tt.wantRemainder))
+				Expect(got.Value).To(ctesting.EqualCmp(tt.wantValue))
+				Expect(got.Remainder.String()).To(ctesting.EqualCmp(tt.wantRemainder))
 			})
 		}
 	})

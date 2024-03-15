@@ -6,15 +6,15 @@ type Clock interface {
 	Now() time.Time
 }
 
-var _ Clock = (*clockImpl)(nil)
+var _ Clock = (*ClockImpl)(nil)
 
-type clockImpl struct{}
+type ClockImpl struct{}
 
-func New() Clock {
-	return &clockImpl{}
+func New() *ClockImpl {
+	return &ClockImpl{}
 }
 
-func (c *clockImpl) Now() time.Time {
+func (c *ClockImpl) Now() time.Time {
 	return time.Now()
 }
 
@@ -24,7 +24,7 @@ type ClockMock struct {
 
 var _ Clock = (*ClockMock)(nil)
 
-func NewMock(data []time.Time) Clock {
+func NewMock(data []time.Time) *ClockMock {
 	return &ClockMock{data: data}
 }
 
