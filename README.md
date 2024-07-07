@@ -1,1 +1,1 @@
-# Core - Omnius Core Library for Go
+# Core - Omnius Core Library for Golang
