@@ -1,6 +1,6 @@
 module github.com/omnius-labs/core-go/cloud-aws
 
-go 1.25.0
+go 1.26.2
 
 require (
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.41.9
