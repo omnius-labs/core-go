@@ -3,7 +3,6 @@ package migration
 import (
 	"context"
 	"fmt"
-	"testing"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
@@ -11,11 +10,6 @@ import (
 	"github.com/testcontainers/testcontainers-go"
 	"github.com/testcontainers/testcontainers-go/wait"
 )
-
-func TestMigration(t *testing.T) {
-	RegisterFailHandler(Fail)
-	RunSpecs(t, "migration Spec")
-}
 
 var _ = Describe("Migration Test", func() {
 	var mysqlC testcontainers.Container

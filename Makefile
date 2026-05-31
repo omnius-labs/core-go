@@ -2,7 +2,6 @@ modules = \
 	aws \
 	base \
 	migration \
-	parserc \
 	testing
 
 install:

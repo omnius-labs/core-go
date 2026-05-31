@@ -3,18 +3,12 @@ package cache
 import (
 	"errors"
 	"sync"
-	"testing"
 	"time"
 
 	"github.com/omnius-labs/core-go/base/clock"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )
-
-func TestValueCache(t *testing.T) {
-	RegisterFailHandler(Fail)
-	RunSpecs(t, "ValueCache Spec")
-}
 
 var _ = Describe("Success Test", func() {
 	c := clock.NewMock(
