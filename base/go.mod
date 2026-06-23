@@ -3,9 +3,9 @@ module github.com/omnius-labs/core-go/base
 go 1.26.2
 
 require (
-	github.com/onsi/ginkgo/v2 v2.29.0
-	github.com/onsi/gomega v1.41.0
-	golang.org/x/sync v0.20.0
+	github.com/onsi/ginkgo/v2 v2.31.0
+	github.com/onsi/gomega v1.42.0
+	golang.org/x/sync v0.21.0
 )
 
 require (
