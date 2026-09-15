@@ -4,8 +4,8 @@ go 1.26.2
 
 require (
 	github.com/onsi/ginkgo/v2 v2.32.1
-	github.com/onsi/gomega v1.42.1
-	golang.org/x/sync v0.22.0
+	github.com/onsi/gomega v1.43.0
+	golang.org/x/sync v0.23.0
 )
 
 require (
